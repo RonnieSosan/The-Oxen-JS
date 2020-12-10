@@ -2,9 +2,9 @@
 If the object obj has a property prop, the function removes the property from the object and returns true; in all other cases it returns false
 */
 
-//Function to confirm and remove property prop form object obj
+//Function to confirm and remove property name 'prop' form object obj
 function removeProperty(obj, prop) {
-    // check if param:obj has a property 'prop' eith 'hasOwnProperty' Function
+    // check if param:obj has a property 'prop' with 'hasOwnProperty' Function
     if(obj.hasOwnProperty(prop)){
 
         // if so then delete prop form obj
@@ -12,7 +12,7 @@ function removeProperty(obj, prop) {
         return true
     }
 
-    // since there is no other execution return false anyway
+    // since there is no other execution return false, ignore redundant else statement
     return false;
 }
 
