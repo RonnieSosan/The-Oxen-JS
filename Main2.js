@@ -2,32 +2,8 @@
 If the object obj has a property prop, the function removes the property from the object and returns true; in all other cases it returns false
 */
 
-
-// Create a variable called hero
-// initialize it with a property name with string value Batman
-const hero = {
-    name: 'Batman'
-  };
-
-//Display heroes before
-console.log(hero)
-
-// Call remove property function
-boolIsPropertyRemoved = removeProperty(hero, 'name')
-
-//check return value
-if(boolIsPropertyRemoved)
-    console.log("Property removed")
-
-else
-    console.log("Property does not exist")
-
-
-//Display Heroes after
-console.log(hero)
-
+//Function to confirm and remove property prop form object obj
 function removeProperty(obj, prop) {
-
     // check if param:obj has a property 'prop' eith 'hasOwnProperty' Function
     if(obj.hasOwnProperty(prop)){
 
@@ -39,3 +15,28 @@ function removeProperty(obj, prop) {
     // since there is no other execution return false anyway
     return false;
 }
+
+
+// Create a variable called hero
+// initialize it with a property name with string value Batman
+const objHero = {
+    name: 'Batman'
+  };
+
+//Display heroes before
+console.log(objHero)
+
+// Call remove property function
+boolIsPropertyRemoved = removeProperty(objHero, 'name')
+
+//check return value
+if(boolIsPropertyRemoved)
+    console.log("Property removed")
+
+else
+    console.log("Property does not exist")
+
+
+//Display Heroes after
+console.log(objHero)
+

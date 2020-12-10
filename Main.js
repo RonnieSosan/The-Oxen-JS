@@ -2,6 +2,7 @@
       Otherwise it should return the given value.
 */
 
+//Ensure function to check param:value definition
 function ensure(value) {
 
     //checks if param:value is null and undefined simultaneously
@@ -16,11 +17,14 @@ function ensure(value) {
 }
 
 try {
-
+    //Call ensure function
     definedValue = ensure("Value");
+
+    //Log result value
     console.log(definedValue);
 } 
 catch(err) {
+    //Catch exception thrown by ensure function and logg error message
     console.log(err);
     }
 
